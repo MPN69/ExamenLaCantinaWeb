@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/viajes.css">
+    <title>Viajes</title>
+  </head>
+  <body>
+    <form
+      class="formulario-viajes"
+      method="get"
+    >
+      <p>
+        <label
+          >Nombre
+          <input type="texto" name="nombre" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Numero
+          <input type="cel" name="celular" />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Email
+          <input type="email" name="email" />
+        </label>
+      </p>
+
+      
+        <legend>Requiere de transporte?</legend>
+        <p>
+          <label class="choice">
+            <input type="radio" name="opcion" required value="Si" /> Si
+          </label>
+        </p>
+        <p>
+          <label class="choice">
+            <input type="radio" name="opcion" required value="No" /> No
+          </label>
+        </p>
+      
+
+        <legend>Extras</legend>
+        <p>
+          <label class="opcion">
+            <input type="checkbox" name="extras" value="comida" /> Comida incluida 
+          </label>
+        </p>
+        <p>
+          <label class="opcion">
+            <input type="checkbox" name="extras" value="mascotas" /> Mascotas 
+            
+          </label>
+        </p>
+        <p>
+          <label class="opcion">
+            <input type="checkbox" name="extras" value="accidente" /> Accidente contra seguros 
+          </label>
+        </p>
+
+
+      <p>
+        <label
+          >Fecha de ida
+          <input type="date" name="ida" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Fecha de salida
+          <input type="date" name="salida" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Destino
+          <select id="lugar" name="lugar">
+            <option value="1">Aguascalientes</option>
+            <option value="2">Baja California</option>
+            <option value="3">Baja California Sur</option>
+            <option value="4">Campeche</option>
+            <option value="5">Chiapas</option>
+            <option value="6">Chihuahua</option>
+            <option value="7">Coahuila</option>
+            <option value="8">Colima</option>
+            <option value="9">Durango</option>
+            <option value="10">Guanajuato</option>
+            <option value="11">Guerrero</option>
+            <option value="12">Hidalgo</option>
+            <option value="13">Jalisco</option>
+            <option value="14">Estado de mexico</option>
+            <option value="15">Michoacan</option>
+            <option value="16">Morelos</option>
+            <option value="17">Nayarit</option>
+            <option value="18">Nuevo Leon</option>
+            <option value="19">Oaxaca</option>
+            <option value="20">Puebla</option>
+            <option value="21">Queretaro</option>
+            <option value="22">Quintana Roo</option>
+            <option value="23">San Luis Potosi</option>
+            <option value="24">Sinaloa</option>
+            <option value="25">Sonora</option>
+            <option value="26">Tabasco</option>
+            <option value="27">Tamaulipas</option>
+            <option value="28">Tlaxcala</option>
+            <option value="29">Veracruz</option>
+            <option value="30">Yucatan</option>
+            <option value="31">Zacatecas</option>
+
+          </select>
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Numero de adultos
+          <select id="nadultos" name="nadultos">
+            <option value="uno">1</option>
+            <option value="dos">2</option>
+            <option value="tres">3</option>
+            <option value="cuatro">4</option>
+            <option value="cinco">5</option>
+            <option value="seis">6</option>
+            <option value="siete">7</option>
+            <option value="ocho">8</option>
+            <option value="nueve">9</option>
+          </select>
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Numero de niños
+          <select id="nniños" name="nniños">
+            <option value="uno">1</option>
+            <option value="dos">2</option>
+            <option value="tres">3</option>
+            <option value="cuatro">4</option>
+            <option value="cinco">5</option>
+            <option value="seis">6</option>
+            <option value="siete">7</option>
+            <option value="ocho">8</option>
+            <option value="nueve">9</option>
+          </select>
+        </label>
+      </p>
+
+      <p><button>Cotizar viaje!</button></p>
+    </form>
+  </body>
+</html>

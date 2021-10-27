@@ -1,0 +1,56 @@
+.formulario-viajes {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 0.8em;
+    width: 20em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    }
+    
+.formulario-viajes * {
+    box-sizing: border-box;
+    }
+    
+.formulario-viajes fieldset {
+    border: none;
+    padding: 0;
+    }
+    
+.formulario-viajes legend,
+.formulario-viajes label {
+    padding: 0;
+    font-weight: bold;
+    }
+    
+.formulario-viajes label.choice {
+    font-size: 0.9em;
+    font-weight: normal;
+    }
+    
+.formulario-viajes input[type="texto"],
+.formulario-viajes input[type="cel"],
+.formulario-viajes input[type="email"],
+.formulario-viajes input[type="date"],
+.formulario-viajes select,
+.formulario-viajes textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 0.9em;
+    padding: 0.3em;
+    }
+
+    
+.formulario-viajes button {
+    padding: 1em;
+    border-radius: 0.5em;
+    background: #eee;
+    border: none;
+    font-weight: bold;
+    margin-top: 1em;
+    }
+    
+.formulario-viajes button:hover {
+    background: #ccc;
+    cursor: pointer;
+    }
