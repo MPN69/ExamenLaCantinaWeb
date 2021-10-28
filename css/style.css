@@ -1,6 +1,123 @@
+
+body{
+  background: url("../IMGS/Fondo.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Logo{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height: 70px;
+  color: rgb(53, 52, 52);
+  text-align: center;
+  width: 450px;
+  height: 60px;
+  float: left;
+
+}
+
+#Global {
+  width: 65%;
+  margin: 0px auto;
+  padding: 30px;
+  background: white;
+  box-shadow: 0px 0px 0px 1px gray;
+}
+
+#menu{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #16222A;
+  background:black;
+  width: 100%;
+  margin-bottom: 20px;
+  color:green;
+  text-align: center;
+  justify-content: center;
+}
+#menu ul{
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+}
+#menu ul li{
+  height: 50px;
+  display: inline-block;
+  transition: all 300ms;
+  justify-content: center;
+  margin:0 15px;
+  background: #333;
+  
+}
+#menu ul:hover a {
+  filter: blur(2px);
+}
+#menu ul li:hover{
+  background: turquoise;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+#menu ul li a{
+  margin-left: 1.3rem;
+  margin-right: 3rem;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#posts{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  padding: 15px;
+  background:grey;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  height: 355px;
+}
+
+#postes{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  padding: 15px;
+  background: rgb(131, 116, 111);
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  height: 320px;
+}
+
+
+.button-more{
+  font-size: 14px;
+  text-align: center;
+  padding: 15px;
+  background: darksalmon;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 70px;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+
 body {
     background-color: #f7f6f6
 }
+
 .clearfix{
     float: none;
     clear: both;
@@ -8,19 +125,19 @@ body {
 
 .bx-wrapper,
 .bx-viewport{
-    height: 800px !important;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    height: 800px;
+    margin-left: 2.7rem;
+    
     text-align: center;
 }
 
 /*FOOTER*/
 
 footer {
-    background: #16222A;
-    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
-    background: linear-gradient(59deg, #3A6073, #16222A);
-    color: white;
+  
+
+    background:rgba(255, 255, 255, 0.507);
+    color: black;
     margin-top:100px;
   }
   

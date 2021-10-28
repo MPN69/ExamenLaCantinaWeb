@@ -29,7 +29,7 @@
 .formulario-viajes input[type="texto"],
 .formulario-viajes input[type="cel"],
 .formulario-viajes input[type="email"],
-.formulario-viajes input[type="date"],
+.formulario-viajes input[type="number"],
 .formulario-viajes select,
 .formulario-viajes textarea {
     display: block;

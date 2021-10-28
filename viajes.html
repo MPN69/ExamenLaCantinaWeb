@@ -2,34 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/viajes.css">
+    <script type="text/javascript" src="js/viajes.js"></script>
     <title>Viajes</title>
   </head>
+
+
   <body>
-    <form
-      class="formulario-viajes"
-      method="get"
-    >
+    <header>
+      <div id="Logo">
+          La Cantina Web
+      </div>
+      <div class="clearfix"></div>
+      <nav id="menu">
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="viajes.html">Viajes</a></li>
+              <li><a href="redes.html">Redes Sociales</a></li>
+          </ul>
+      </nav>
+  </header>
+    <form class="formulario-viajes" method="get">
       <p>
         <label
           >Nombre
-          <input type="texto" name="nombre" required />
+          <input type="texto" name="nombre" id="form_name" required />
         </label>
       </p>
 
       <p>
         <label
           >Numero
-          <input type="cel" name="celular" />
+          <input type="cel" name="celular"/>
         </label>
       </p>
 
       <p>
         <label
           >Email
-          <input type="email" name="email" />
+          <input type="email" name="email" id="form_email" required/>
         </label>
       </p>
 
@@ -37,7 +51,7 @@
         <legend>Requiere de transporte?</legend>
         <p>
           <label class="choice">
-            <input type="radio" name="opcion" required value="Si" /> Si
+            <input type="radio" name="opcion" required value="Si" id=""/> Si
           </label>
         </p>
         <p>
@@ -68,15 +82,19 @@
 
       <p>
         <label
-          >Fecha de ida
-          <input type="date" name="ida" required />
-        </label>
-      </p>
-
-      <p>
-        <label
-          >Fecha de salida
-          <input type="date" name="salida" required />
+          >Cuantos dias te vas a qudar?
+          <select name="dias" id="diasid">
+            <option value="32">1</option>
+            <option value="33">2</option>
+            <option value="34">3</option>
+            <option value="35">4</option>
+            <option value="36">5</option>
+            <option value="37">6</option>
+            <option value="38">7</option>
+            <option value="39">8</option>
+            <option value="40">9</option>
+            <option value="41">10</option>
+          </select>
         </label>
       </p>
 
@@ -93,11 +111,11 @@
             <option value="7">Coahuila</option>
             <option value="8">Colima</option>
             <option value="9">Durango</option>
-            <option value="10">Guanajuato</option>
-            <option value="11">Guerrero</option>
-            <option value="12">Hidalgo</option>
-            <option value="13">Jalisco</option>
-            <option value="14">Estado de mexico</option>
+            <option value="10">Estado de Mexico</option>
+            <option value="11">Guanajuato</option>
+            <option value="12">Guerrero</option>
+            <option value="13">Hidalgo</option>
+            <option value="14">Jalisco</option>
             <option value="15">Michoacan</option>
             <option value="16">Morelos</option>
             <option value="17">Nayarit</option>
@@ -140,7 +158,8 @@
       <p>
         <label
           >Numero de niños
-          <select id="nniños" name="nniños">
+          <select id="nninos" name="nninos">
+            <option value="cero">0</option>
             <option value="uno">1</option>
             <option value="dos">2</option>
             <option value="tres">3</option>
@@ -154,7 +173,7 @@
         </label>
       </p>
 
-      <p><button>Cotizar viaje!</button></p>
+      <p><a href="resultado.html"><input type="button" value="Enviar" onclick="recibir()" onclick="mota()"></a></p>
     </form>
   </body>
 </html>
