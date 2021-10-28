@@ -163,11 +163,6 @@ footer {
     color: white;
   }
   
-  
-  /*SOCİAL İCONS*/
-  
-  /* footer social icons */
-  
   ul.social-network {
     list-style: none;
     display: inline;
@@ -179,9 +174,6 @@ footer {
     display: inline;
     margin: 0 5px;
   }
-  
-  
-  /* footer social icons */
   
   .social-network a.icoFacebook:hover {
     background-color: #3B5998;

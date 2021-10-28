@@ -154,9 +154,6 @@ function recibir(){
         }
 
     document.getElementById("escribir").innerHTML="Tu nombre es: "+nombre+"<br>Tu correo es: "+correo+"<br>Tu destino es: "+lugarid[lugar-1]+"<br>Numero de adultos: "+adultos+"<br>Numero de niños: "+ninos+"<br>El costo total del viaje es de: "+precio+"<br>El costo total del hotel es: "+preciohotel;
-    
-    
-    
 }
 
 function mota(){
