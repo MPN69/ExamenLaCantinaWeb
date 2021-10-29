@@ -42,6 +42,8 @@
   Costo Total de estancia: <span id="resultado7"></span>$ <br>
   Costo Total del viaje segun los kilometros: <span id="resultado8"></span>$ <br>
   El total de su viaje seria de : <span id="resultado9"></span>$ <br>
+
+  <div id="ImagenResultado"></div>
   <script>
     
     var preciohotel = 100;
@@ -220,9 +222,102 @@
     document.getElementById("resultado7").innerHTML = total_dias_personas;
     document.getElementById("resultado8").innerHTML = precio;
     document.getElementById("resultado9").innerHTML = total_total;
+
+    var img = document.createElement("img");
+    
+
+
+    if(localStorage.getItem("lugar")=="Aguascalientes"){
+      img.src = "IMGS/Aguascalientes.png";
+    }else if(localStorage.getItem("lugar")=="Baja California"){
+      img.src = "IMGS/bajaCalifornia.jpg";
+    }else if(localStorage.getItem("lugar")=="Baja California Sur"){
+      img.src = "IMGS/bajaCaliforniaSur.jpg";
+    }else if(localStorage.getItem("lugar")=="Campeche"){
+      img.src = "IMGS/Campeche.jpg";
+    }else if(localStorage.getItem("lugar")=="Chiapas"){
+      img.src = "IMGS/chiapas.jpg";
+    }else if(localStorage.getItem("lugar")=="Chihuahua"){
+      img.src = "IMGS/Chihuahua.jpg";
+    }else if(localStorage.getItem("lugar")=="Coahuila"){
+      img.src = "IMGS/Coahuila.jpg";
+    }else if(localStorage.getItem("lugar")=="Colima"){
+      img.src = "IMGS/Colima.jpg";
+    }else if(localStorage.getItem("lugar")=="Durango"){
+      img.src = "IMGS/Durango.jpg";
+    }else if(localStorage.getItem("lugar")=="Estado de Mexico"){
+      img.src = "IMGS/EstadoDeMexico.jpg";
+    }else if(localStorage.getItem("lugar")=="Guanajuato"){
+      img.src = "IMGS/Guanajuato.jpg";
+    }else if(localStorage.getItem("lugar")=="Guerrero"){
+      img.src = "IMGS/Guerrero.jpg";
+    }else if(localStorage.getItem("lugar")=="Hidalgo"){
+      img.src = "IMGS/Hidalgo.jpg";
+    }else if(localStorage.getItem("lugar")=="Jalisco"){
+      img.src = "IMGS/Jalisco.jpg";
+    }else if(localStorage.getItem("lugar")=="Michoacan"){
+      img.src = "IMGS/Michoacan.jpg";
+    }else if(localStorage.getItem("lugar")=="Morelos"){
+      img.src = "IMGS/Morelos.jpg";
+    }else if(localStorage.getItem("lugar")=="Nayarit"){
+      img.src = "IMGS/Nayarit.jpg";
+    }else if(localStorage.getItem("lugar")=="Nuevo Leon"){
+      img.src = "IMGS/NuevoLeon.jpg";
+    }else if(localStorage.getItem("lugar")=="Oaxaca"){
+      img.src = "IMGS/Oaxaca.jpg";
+    }else if(localStorage.getItem("lugar")=="Puebla"){
+      img.src = "IMGS/Puebla.jpg";
+    }else if(localStorage.getItem("lugar")=="Queretaro"){
+      img.src = "IMGS/Queretaro.jpg";
+    }else if(localStorage.getItem("lugar")=="Quintana Roo"){
+      img.src = "IMGS/QuintanaRoo.jpg";
+    }else if(localStorage.getItem("lugar")=="San Luis Potosi"){
+      img.src = "IMGS/SanLuisPotosi.jpg";
+    }else if(localStorage.getItem("lugar")=="Sinaloa"){
+      img.src = "IMGS/Sinaloa.jpg";
+    }else if(localStorage.getItem("lugar")=="Sonora"){
+      img.src = "IMGS/Sonora.jpg";
+    }else if(localStorage.getItem("lugar")=="Tabasco"){
+      img.src = "IMGS/Tabasco.jpg";
+    }else if(localStorage.getItem("lugar")=="Tamaulipas"){
+      img.src = "IMGS/Tamaulipas.jpg";
+    }else if(localStorage.getItem("lugar")=="Tlaxcala"){
+      img.src = "IMGS/Tlaxcala.jpg";
+    }else if(localStorage.getItem("lugar")=="Veracruz"){
+      img.src = "IMGS/Tlaxcala.jpg";
+    }else if(localStorage.getItem("lugar")=="Yucatan"){
+      img.src = "IMGS/Yucatan.jpg";
+    }else if(localStorage.getItem("lugar")=="Zacatecas"){
+      img.src = "IMGS/Zacatecas.jpg";
+    }
+
+    var src = document.getElementById("ImagenResultado");
+    src.appendChild(img);
     
   </script>
   </div>
+  
+  <footer>
+    <!--facebook-->
+        <a class="facebook" href="#!" role="button"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <!-- Instagram -->
+        <a class="instagram" href="#!" role="button"
+          ><i class="bi bi-instagram"></i
+        ></a>
+
+        <!-- Whatsapp -->
+        <a class="whatsapp" href="#!" role="button"
+          ><i class="bi bi-whatsapp"></i
+        ></a>
+  
+    <!-- Copyright -->
+    <div>
+      © 2021 Copyright:
+      <a  id="copy" href="https://mdbootstrap.com/">La Cantina</a>
+    </div>
+  </footer>
 </body>
   
 </html>

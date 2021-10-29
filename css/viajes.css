@@ -144,6 +144,7 @@
   }
   
   footer {
+    margin-top: 30px;
     background: #333;
     color: #fff;
     padding: 10px 0;
@@ -208,7 +209,30 @@
     width: 50%;
     color: #fff;
     border-radius: 7px;
-    height: 45%;
+    height: 70%;
     opacity: 0.95;
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
   }
+
+  #boton { 
+    padding: 1em;
+    border-radius: 0.5em;
+    background: #eee;
+    border: none;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-left: 7em;
+    }
+
+
+#boton:hover {
+    background: #ccc;
+    cursor: pointer;
+    }
+
+#ImagenResultado{
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 auto;
+}
