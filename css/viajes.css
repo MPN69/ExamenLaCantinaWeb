@@ -1,56 +1,200 @@
-.formulario-viajes {
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background: url("../IMGS/avion.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #Global{
+      width: 100%;
+      height: auto;
+      background: rgba(0,0,0,0.5);
+      justify-self: left;
+      padding: 50px;
+  }
+  .formulario-viajes {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 0.8em;
-    width: 20em;
+    width: 30%;
     padding: 1em;
-    border: 1px solid #ccc;
-    }
-    
-.formulario-viajes * {
+    border: 1px solid #333;
+    border-radius: 0.5em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    align-content: center;
+    color: #fff;
+    margin: 0 auto;   
+  }
+  
+  .formulario-viajes * {
     box-sizing: border-box;
-    }
-    
-.formulario-viajes fieldset {
+  }
+  
+  .formulario-viajes fieldset {
     border: none;
     padding: 0;
-    }
-    
-.formulario-viajes legend,
-.formulario-viajes label {
+  }
+  
+  .formulario-viajes legend,
+  .formulario-viajes label {
     padding: 0;
     font-weight: bold;
-    }
-    
-.formulario-viajes label.choice {
+  }
+  
+  .formulario-viajes label.choice {
     font-size: 0.9em;
     font-weight: normal;
-    }
-    
-.formulario-viajes input[type="texto"],
-.formulario-viajes input[type="cel"],
-.formulario-viajes input[type="email"],
-.formulario-viajes input[type="number"],
-.formulario-viajes select,
-.formulario-viajes textarea {
+  }
+  
+  .formulario-viajes input[type="texto"],
+  .formulario-viajes input[type="cel"],
+  .formulario-viajes input[type="email"],
+  .formulario-viajes input[type="number"],
+  .formulario-viajes select,
+  .formulario-viajes textarea {
     display: block;
     width: 100%;
     border: 1px solid #ccc;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 0.9em;
     padding: 0.3em;
-    }
-
-    
-.formulario-viajes button {
-    padding: 1em;
-    border-radius: 0.5em;
-    background: #eee;
-    border: none;
+    border-radius: 5px;
+  }
+  
+  
+  header {
+    width: 100%;
+    height: 70px;
+    background: #333;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+    position: fixed;
+      top: 0;
+  
+  }
+  .ancho {
+    width: 80%;
+    height: 70px;
+    margin: auto;
+  }
+  
+  .logo {
+    width: 30%;
+    height: 70px;
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+  .logo:hover {
+    text-shadow: 0 0 5px rgba(0, 178, 255, 1), 0 0 10px rgba(0, 178, 255, 1),
+      0 0 20px rgba(0, 178, 255, 1), 0 0 40px rgba(38, 104, 127, 1),
+      0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+      0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+      0 0 180px rgba(38, 104, 127, 1);
+  }
+  .logo p a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
     font-weight: bold;
-    margin-top: 1em;
-    }
-    
-.formulario-viajes button:hover {
-    background: #ccc;
-    cursor: pointer;
-    }
+    font-family: rale;
+  }
+  nav {
+    width: 70%;
+    height: 70px;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    font-family: rale;
+    background: #333;
+    transition: 0.1s;
+  }
+  
+  nav ul li a:hover {
+    background: #333;
+    color: #fff;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  @font-face {
+    font-family: rale;
+    src: url(fuentes/Raleway-Regular.ttf);
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+    background: #333;
+    line-height: 50px;
+    font-size: 18px;
+    transition: 0.1s;
+  }
+  
+  footer a:hover {
+    color: #fff;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  footer .facebook:hover {
+    background: #3b5999;
+    filter: none;
+  }
+  
+  footer .instagram:hover {
+    background: #c13584;
+  }
+  footer .whatsapp:hover {
+    background: #25d366;
+  }
+  
+  #copy {
+    font-family: rale;
+    background: #333;
+    width: auto;
+    margin-bottom: auto;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  #copy p {
+    padding: 10px;
+  }

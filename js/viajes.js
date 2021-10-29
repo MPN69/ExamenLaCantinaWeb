@@ -309,3 +309,10 @@ function mota(){
     'Veracruz',
     'Yucatán',
     'Zacatecas']
+
+function validar(forma){
+    console.log(fomra);
+    var nombre=forma.nombre;
+    console.log(nombre)
+
+}

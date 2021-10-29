@@ -1,372 +1,182 @@
-
-body{
-  background: url("../IMGS/Fondo.jpg");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url("../IMGS/neon.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
+header {
+  width: 100%;
+  height: 70px;
+  background: #333;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.ancho {
+  width: 80%;
+  height: 70px;
+  margin: auto;
+}
 
-#Logo{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 25px;
-  letter-spacing: 3px;
-  line-height: 70px;
-  color: rgb(53, 52, 52);
-  text-align: center;
-  width: 450px;
-  height: 60px;
+.logo {
+  width: 30%;
+  height: 70px;
   float: left;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.logo:hover {
+  text-shadow: 0 0 5px rgba(0, 178, 255, 1), 0 0 10px rgba(0, 178, 255, 1),
+    0 0 20px rgba(0, 178, 255, 1), 0 0 40px rgba(38, 104, 127, 1),
+    0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+    0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+    0 0 180px rgba(38, 104, 127, 1);
+}
+.logo p a {
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: rale;
+}
+nav {
+  width: 70%;
+  height: 70px;
+  float: left;
+  text-align: right;
+  padding-top: 24px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: auto;
+  height: auto;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  font-family: rale;
+  background: #333;
+  transition: 0.1s;
+}
 
+nav ul li a:hover {
+  background: #333;
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+@font-face {
+  font-family: rale;
+  src: url(fuentes/Raleway-Regular.ttf);
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  padding: 0 10px;
+  background: #333;
+  line-height: 50px;
+  font-size: 18px;
+  transition: 0.1s;
+}
+
+footer a:hover {
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+footer .facebook:hover {
+  background: #3b5999;
+  filter: none;
+}
+
+footer .instagram:hover {
+  background: #c13584;
+}
+footer .whatsapp:hover {
+  background: #25d366;
+}
+
+#copy {
+  font-family: rale;
+  background: #333;
+  width: auto;
+  margin-bottom: auto;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+#copy p {
+  padding: 10px;
+}
+
+.button-more {
+  display: inline-block;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  color: #333;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.button-more:hover {
+  background: #fff;
+  color: #333;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+#posts,
+#postes {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  background: lightgray;
 }
 
 #Global {
-  width: 65%;
-  margin: 0px auto;
-  padding: 30px;
-  background: white;
-  box-shadow: 0px 0px 0px 1px gray;
+  width: 98%;
+  margin: auto;
+  padding: 50px;
+  background: rgb(218, 216, 221);
+  border-radius: 0.5em;
+  opacity: 0.95;
 }
 
-#menu{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #16222A;
-  background:black;
-  width: 100%;
-  margin-bottom: 20px;
-  color:green;
-  text-align: center;
-  justify-content: center;
+#carrucel {
+  width: 98%;
+  height: auto;
+  margin: auto;
 }
-#menu ul{
-  line-height: 50px;
-  display: flex;
-  justify-content: center;
-}
-#menu ul li{
-  height: 50px;
-  display: inline-block;
-  transition: all 300ms;
-  justify-content: center;
-  margin:0 15px;
-  background: #333;
-  
-}
-#menu ul:hover a {
-  filter: blur(2px);
-}
-#menu ul li:hover{
-  background: turquoise;
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
-  filter: none;
-}
-#menu ul li a{
-  margin-left: 1.3rem;
-  margin-right: 3rem;
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding-left: 80px;
-  padding-right: 80px;
-}
-
-#posts{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify;
-  padding: 15px;
-  background:grey;
-  color: white;
-  text-decoration: none;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
-  height: 355px;
-}
-
-#postes{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify;
-  padding: 15px;
-  background: rgb(131, 116, 111);
-  color: white;
-  text-decoration: none;
-  margin-top: 10px;
-  margin-bottom: 35px;
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
-  height: 320px;
-}
-
-
-.button-more{
-  font-size: 14px;
-  text-align: center;
-  padding: 15px;
-  background: darksalmon;
-  color: white;
-  text-decoration: none;
-  margin-top: 10px;
-  margin-bottom: 25px;
-  width: 70px;
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
-}
-
-
-body {
-    background-color: #f7f6f6
-}
-
-.clearfix{
-    float: none;
-    clear: both;
-}
-
-.bx-wrapper,
-.bx-viewport{
-    height: 800px;
-    margin-left: 2.7rem;
-    
-    text-align: center;
-}
-
-/*FOOTER*/
-
-footer {
-  
-
-    background:rgba(255, 255, 255, 0.507);
-    color: black;
-    margin-top:100px;
-  }
-  
-  footer a {
-    color: #fff;
-    font-size: 14px;
-    transition-duration: 0.2s;
-  }
-  
-  footer a:hover {
-    color: #FA944B;
-    text-decoration: none;
-  }
-  
-  .copy {
-    font-size: 12px;
-    padding: 10px;
-    border-top: 1px solid #FFFFFF;
-  }
-  
-  .footer-middle {
-    padding-top: 2em;
-    color: white;
-  }
-  
-  ul.social-network {
-    list-style: none;
-    display: inline;
-    margin-left: 0 !important;
-    padding: 0;
-  }
-  
-  ul.social-network li {
-    display: inline;
-    margin: 0 5px;
-  }
-  
-  .social-network a.icoFacebook:hover {
-    background-color: #3B5998;
-  }
-  
-  .social-network a.icoLinkedin:hover {
-    background-color: #007bb7;
-  }
-  
-  .social-network a.icoFacebook:hover i,
-  .social-network a.icoLinkedin:hover i {
-    color: #fff;
-  }
-  
-  .social-network a.socialIcon:hover,
-  .socialHoverClass {
-    color: #44BCDD;
-  }
-  
-  .social-circle li a {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto 0 auto;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    font-size: 15px;
-    
-  }
-  
-  .social-circle li i {
-    margin: 0;
-    line-height: 30px;
-    text-align: center;
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-  
-  .social-circle li a:hover i,
-  .triggeredHover {
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -ms--transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    transition: all 0.2s;
-  }
-  
-  .social-circle i {
-    color: #595959;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    -ms-transition: all 0.8s;
-    transition: all 0.8s;
-  }
-  
-  .social-network a {
-    background-color: #F9F9F9;
-  }
-  
-  .gg-facebook {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 20px;
-    height: 20px
-   }
-   
-   .gg-facebook::after,
-   .gg-facebook::before {
-    content: "";
-    display: block;
-    position: absolute;
-    box-sizing: border-box
-   }
-   
-   .gg-facebook::before {
-    width: 8px;
-    height: 20px;
-    border-left: 4px solid;
-    border-top: 4px solid;
-    border-top-left-radius: 5px;
-    left: 6px
-   }
-   
-   .gg-facebook::after {
-    width: 10px;
-    height: 4px;
-    background: currentColor;
-    top: 7px;
-    left: 4px;
-    transform: skew(-5deg)
-   } 
-
-   .gg-headset {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 18px;
-    height: 18px;
-    border-top-left-radius: 120px;
-    border-top-right-radius: 120px;
-    border: 2px solid;
-    border-bottom: 0
-   }
-
-   .social-network a.instagram:hover {
-    background-color:rgb(219, 14, 168);
-    color: white;
-   }
-   .social-network a.instagram:hover i,
-  .social-network a.icoLinkedin:hover i {
-    color: #fff;
-  }
-
-   .social-network a.discord:hover {
-    background-color:rgb(99, 6, 221);
-    color: white;
-   }
-   .social-network a.discord:hover i,
-  .social-network a.icoLinkedin:hover i {
-    color: #fff;
-  }
-   
-   .gg-headset::after,
-   .gg-headset::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    border: 2px solid;
-    width: 6px;
-    height: 8px;
-    top: 8px
-   }
-   
-   .gg-headset::before {
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    left: -2px
-   }
-   
-   .gg-headset::after {
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    left: 10px
-   } 
-
-   .gg-instagram {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    border: 2px solid transparent;
-    box-shadow: 0 0 0 2px;
-    border-radius: 4px;
-    width: 20px;
-    height: 20px
-   }
-   
-   .gg-instagram::after,
-   .gg-instagram::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute
-   }
-   
-   .gg-instagram::after {
-    border: 2px solid;
-    left: 3px;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    top: 3px
-   }
-   
-   .gg-instagram::before {
-    border-radius: 3px;
-    width: 2px;
-    height: 2px;
-    background: currentColor;
-    right: 1px;
-    top: 1px
-   } 
-
-   
